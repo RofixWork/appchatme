@@ -1,0 +1,62 @@
+@import 'vars';
+@import 'buttons';
+//general styles
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $fontFamilyOne;
+    overflow-x: hidden;
+}
+.pointer {
+    cursor: pointer;
+}
+//general styles
+//navbar
+.navbar  {
+    padding: 5px 0;
+    background-color: $mainColor;
+    a.navbar-brand {
+        color: $subColor;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+}
+//navbar
+//modal
+.model {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #000000, $alpha: .6);
+    z-index: 99999;
+    &__box {
+        .instruction {
+            font-size: 14px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+//modal
+/*posts*/
+.posts  {
+    .firstLetter {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background-color: $mainColor;
+        color: $subColor;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 15px;
+    }
+}
+/*posts*/
